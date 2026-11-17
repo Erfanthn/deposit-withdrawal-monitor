@@ -26,6 +26,7 @@ If no Telegram bot is set up, the same lines are printed to the console.
 |---|---|
 | Bitpin | no |
 | KuCoin | no |
+| Gate | no |
 | MEXC | read-only API key |
 | Bybit | read-only API key |
 
@@ -53,7 +54,7 @@ The first round only saves a snapshot. Alerts start from the second round.
   Here each platform is one small file in `monitor/sources/` that returns
   `{(coin, network): status}`, and everything else is shared.
 * I wrote this with a lot of help from AI tools, and I tested it against the
-  live Bitpin and KuCoin endpoints. The MEXC and Bybit parts follow their API
+  live Bitpin, KuCoin and Gate endpoints. The MEXC and Bybit parts follow their API
   docs but need your own keys to run.
 
 ## License
